@@ -7,7 +7,6 @@
 .btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   font-family: $btn-font-family;
   font-weight: $btn-font-weight;
   color: $body-color;
@@ -141,7 +140,7 @@ fieldset:disabled a.btn {
 //
 
 .btn-block {
-  display: flex;
+  display: block;
   width: 100%;
 
   // Vertically space out multiple block buttons
