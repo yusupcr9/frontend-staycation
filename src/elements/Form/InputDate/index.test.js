@@ -1,6 +1,6 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
-import { screen } from "@testing-library/dom";
+// import { screen } from "@testing-library/dom";
 import InputDate from "./index";
 
 class TestInput extends React.Component {
@@ -43,7 +43,7 @@ test("Should have tag <input> and has className .form-control", () => {
 });
 test("Should show date picker when click input field", () => {
   const { container, input } = setup();
-  screen.debug();
+  //   screen.debug();
   fireEvent.click(input, { button: 1 });
   const datePickerWrapper = container.querySelector(".date-range-wrapper");
   // screen.debug()
