@@ -5,6 +5,7 @@ import "./assets/scss/style.scss";
 import LandingPage from "pages/LandingPage";
 import DetailPages from "pages/DetailPages";
 import Example from "pages/Example";
+import Checkout from "pages/Checkout";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Router>
         <Route exact path="/" component={LandingPage}></Route>
         <Route exact path="/properties/:id" component={DetailPages}></Route>
-        <Route exact path="/example" component={Example}></Route>
+        <Route path="/checkout" component={Checkout}></Route>
+        <Route path="/example" component={Example}></Route>
       </Router>
     </div>
   );

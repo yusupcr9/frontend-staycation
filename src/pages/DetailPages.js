@@ -14,7 +14,7 @@ import ItemDetails from "json/itemDetails.json";
 
 export default class DetailPages extends Component {
   componentDidMount() {
-    window.title = "Details Page";
+    document.title = "Details Page";
     window.scrollTo(0, 0);
   }
   render() {
