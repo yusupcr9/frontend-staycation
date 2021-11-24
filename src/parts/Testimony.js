@@ -7,7 +7,6 @@ import Star from "elements/Star";
 import Button from "elements/Button";
 
 export default function Testimony({ data }) {
-  console.log(data);
   return (
     <Fade bottom>
       <section className="container">
@@ -47,7 +46,7 @@ export default function Testimony({ data }) {
                 hasShadow
                 isPrimary
                 type="link"
-                href={`/testimonial/${data._id}`}
+                href={`/soon`}
               >
                 Read Their Story
               </Button>

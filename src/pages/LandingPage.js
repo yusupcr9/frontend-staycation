@@ -6,6 +6,7 @@ import MostPicked from "parts/MostPicked";
 import Categories from "parts/Categories";
 import Testimony from "parts/Testimony";
 import Footer from "parts/Footer";
+import Loading from "parts/Loading";
 
 import { fetchPage } from "store/actions/page";
 
@@ -26,7 +27,7 @@ class LandingPage extends Component {
   }
   render() {
     const { page } = this.props;
-    if (!page.hasOwnProperty("landingPage")) return null;
+    if (!page.hasOwnProperty("landingPage")) return <Loading />;
     return (
       <React.Fragment>
         <Header {...this.props}></Header>
